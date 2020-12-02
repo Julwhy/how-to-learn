@@ -256,6 +256,8 @@
   top: 0px;
   right: -210px;
   z-index: 0;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
 }
 
 .table__cell_theme_dark {
