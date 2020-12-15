@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -17,6 +26,7 @@
   position: relative;
   display: flex;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -74,6 +84,15 @@
   z-index: 0;
 }
 
+/* Анимация для квадата */
+.rotation {
+  animation: rotation 2s;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+}
+/* конец анимации */
+
 .content {
   margin: 0px;
 }
@@ -82,13 +101,13 @@
 
 .description{
   margin: 0px;
+  padding-top: 100px;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  padding-top: 100px;
   margin: auto;
 }
 
@@ -120,6 +139,92 @@
 
 .two-columns__span-accent {
   font-weight: bold;
+}
+
+/* techniques */
+.techniques {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.cards__item {
+  padding-top: 60px;
+  width: 240px;
+  margin-right: 100px;
+  box-sizing: border-box;
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border: none;
+  border-radius: 50%;
+  padding: 0px 40px 0px;
+}
+
+.cards__title {
+  margin: 0 auto;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  padding-top: 43px;
+}
+
+.cards__description {
+  margin: 0;
+  padding-top: 16px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* video */
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -60px;
+}
+
+.video__iframes {
+  display: flex;
+}
+
+.video__iframes_position {
+  margin: 50px auto 0;
+}
+
+.video__iframe {
+padding-right: 20px;
+}
+
+.video__iframe:nth-of-type(2) {
+  padding-right: 0px;
+}
+
+/* oakley */
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
 }
 
 
@@ -193,7 +298,7 @@
   flex-direction: column;
   min-height: 790px;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .feynman__title {
@@ -223,6 +328,86 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+}
+
+/* khan */
+.khan {
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.khan__quote {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  width: 790px;
+  padding-top: 50px;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 68px;
+}
+
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+  padding-right: 48px;
+  object-fit: cover;
+  object-position: top left;
+
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.link_opacity:hover {
+  opacity: 30%;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 
 /* kaufman */
@@ -266,6 +451,30 @@
   margin-right: 0;
   margin-top: 80px;
   z-index: 1;
+}
+
+/* resources */
+.resources {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 217px;;
+}
+
+.resources__logo-zone {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  width: 1100px;
+  justify-content: center;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  text-align: center;
 }
 
 /* footer */
