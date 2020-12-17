@@ -39,7 +39,6 @@
 
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-@import url(../blocks/kaufman/__triangle-illustration/kaufman__triangle-illustration.css);
 
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__author/khan__author.css);
@@ -89,4 +88,3 @@
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
-@import url(../blocks/video/__iframes/_position/video__iframes_position.css);
